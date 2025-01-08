@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Intercom Ceramica</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: #2e3a45;
+      animation: fadeInPage 2s;
+    }
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    nav {
+      background-color: #2e3a45;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: 'Oswald', sans-serif;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f2a900;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      list-style: none;
+      padding: 0.5rem 0;
+      margin: 0;
+      border-radius: 5px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    nav ul li ul li a {
+      color: #333;
+      display: block;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+    }
+    nav ul li ul li a:hover {
+      background-color: #f2f2f2;
+    }
+    nav ul li:hover ul {
+      display: block;
+    }
+    .contact-section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .contact-section h2 {
+      margin-bottom: 1rem;
+      color: #2e3a45;
+      font-family: 'Playfair Display', serif;
+    }
+    .contact-details {
+      margin-top: 2rem;
+      line-height: 2;
+    }
+    .contact-details p {
+      color: #555;
+    }
+    form {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #f2a900;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: 'Oswald', sans-serif;
+    }
+    form button:hover {
+      background-color: #ffd65c;
+    }
+    footer {
+      background-color: #2e3a45;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Intercom</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li>
+        <a href="products.html">Products</a>
+        <ul>
+          <li><a href="tiles.html">Tiles</a></li>
+          <li><a href="bathroom.html">Bathroom</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <h2 class="animate__animated animate__fadeInDown">Contact Us</h2>
+    <p class="animate__animated animate__fadeInUp">Have any questions or need assistance? We'd love to hear from you!</p>
+
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-details">
+      <p><strong>Address:</strong> Rr. Qarkore Gjilan - Bujanoc</p>
+      <p><strong>Phone:</strong> +383 45 340 583</p>
+      <p><strong>Email:</strong> info@intercomceramica.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Intercom. All rights reserved.</p>
+  </footer>
+</body>
+</html>

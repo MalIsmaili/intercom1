@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bathroom Products - Intercom Ceramica</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: #2e3a45;
+      animation: fadeInPage 2s;
+    }
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    nav {
+      background-color: #2e3a45;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f2a900;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #2e3a45;
+      list-style: none;
+      padding: 0.5rem 0;
+      margin: 0;
+      border-radius: 5px;
+    }
+    nav ul li:hover ul {
+      display: block;
+    }
+    nav ul li ul li {
+      padding: 0.5rem 1rem;
+    }
+    nav ul li ul li a {
+      color: white;
+      font-size: 0.9rem;
+    }
+    nav ul li ul li a:hover {
+      color: #f2a900;
+    }
+    .product-section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .product-category {
+      margin: 2rem 0;
+    }
+    .product-category h2 {
+      color: #2e3a45;
+    }
+    .product-category .products {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .product {
+      width: 250px;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product h3 {
+      color: #2e3a45;
+      margin: 0.5rem 0;
+    }
+    .product p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+    footer {
+      background-color: #2e3a45;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+
+    }
+    .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Intercom</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li>
+        <a href="products.html">Products</a>
+        <ul>
+          <li><a href="bathroom.html">Bathroom</a></li>
+          <li><a href="tiles.html">Tiles</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="product-section">
+    <h2 class="animate__animated animate__fadeInDown">Bathroom Products</h2>
+
+    <div class="product-category">
+      <div class="products">
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/461900199_1063432889119419_2386734170387395681_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PBkh5d3SfGwQ7kNvgFIztG8&_nc_oc=AdhJ6eqKNZFhFE85KhnjHLh-XOm4PWMixuA6oq_pZoK0Cmn7XK3fPxGseaE_SRSjl1Y&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AeyMGDHHWzeplyYu851z6Zj&oh=00_AYAm7sh4j4Cu4mNjL-6Y_AUbTHSYn5HEhTXbIr_SexcOaQ&oe=678486C4" alt="Bathroom Product 1">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/461836818_1063432899119418_5237235350333462079_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=H7eg8bghNbgQ7kNvgHjE41c&_nc_oc=AdjmPQn69LYHhvDTrG2ww1ICA_o3FPyYpFFO0uOjt2001zwe-S09VGeGCHF_dqYCOIM&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=ABLObQBn7IAIruMFR65VSbO&oh=00_AYDBjwy0285Q87h-rNUXoGsXSwJ9X3sGmIB0ZAHkJSsOXw&oe=67848AF8" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/461984742_1063432905786084_840852668296441431_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mbvHFmhFU_kQ7kNvgFJ3K-F&_nc_oc=AdjDcbS37-JUuRgaRQ0AUu2zuHi9xOjIwX2RzkmerpxEYOOvXBHMFwPKoqO1_1jbZ90&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AzK5fSKIXGI6y_r5uNduyuX&oh=00_AYBsqYIo09H6gNx3jAf5IvYIW6ZaBPh1IsEnYR8RCijG3w&oe=67845580" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/461801133_1063432895786085_2358695333950528911_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=79KHTXOpHjwQ7kNvgEMk1Jo&_nc_oc=Adh9YLwiPvdvLd9LS8IdppNiUlHNyDwXDPijNjtvHe_Wg_8GTa1V6qqsUd_roXd6OvE&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AcVG2y_WPIySjw6gR7wS5tI&oh=00_AYA88XpO7J-ZQaVgthQyIPFvSUInst4z733LxOkq-HoIHQ&oe=67847B96" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/461778038_1063432909119417_3454400228541149135_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=tXs0hLcSiU4Q7kNvgGWr-54&_nc_oc=AdhuUDqDOEleV4AUAvXyB73S3bXcOGxOXHg2vRgc3mtkibyox4fQz56ohKaovGi43hs&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=ADT0VJBVhB-IM3owoBpTct0&oh=00_AYDvN1GFvVsuSrMIwd8mr5DmdqWeyh6IUqkj-NNzSBTcPw&oe=6784715B" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/454426059_1018631856932856_7813781862320709845_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IDfxzx9QpGwQ7kNvgGfSQo5&_nc_oc=Adjqwb838SiMgjibd1E7h_EjcDjHLbB9EkSDbE-2X788Nc2loLSwx-3R7tEUJgwdLxU&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=ApBkywhrg5ag8j1V1fVBOST&oh=00_AYDilzcR1BSc8ES8_KkCtWON4aVrc0wVShJM3GqJhm9B6g&oe=67847BA4" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/454527482_1018631843599524_4407976787997281294_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VElSVBpTOkkQ7kNvgFQTj2j&_nc_oc=Adgv098A3TdzLu2SHVkI3OvzCieZyHIigNHFNi0_X2LV-HyHHYu9Md5f761Knd2dcF0&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=A2xTYJBbgbfpHJqMZeO4Xp3&oh=00_AYAuPEox7rvI0DJorT9p2zTz2Ja7r6cDfLfRQJvnCbA67g&oe=67846399" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/454426058_1018631860266189_5454947471678093164_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TywtLXYixzQQ7kNvgHbxc5F&_nc_oc=AdjZw-2yEmnEwjN1t3IP-ICtUBaMDAUDocVhmNgzMuF7ALfIOjo9JF1FO2muQ5y0tk8&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AiZbBc0jhUOlwQQOl91mo07&oh=00_AYA31wvtosoHVh1fJ2qixFR0QufEIHAFuME8sbWy_12hcg&oe=67846B63" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/454412199_1018631853599523_8378131007044222293_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5gyxznFEPOAQ7kNvgHsGSNv&_nc_oc=AdiRqd-liKwwW0XOIytOoxUhFqyhTWnTXeu3tT0MhbZCuEOzrlLbiyTj_GM_DxdDg5Y&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AAg5gRb3TUY-l79UcTlmZEe&oh=00_AYCW3uq7u2wGsUlmNptjXQ5FrSwcOpmoRKVsfWJp1yQdhA&oe=678489B3" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/454526572_1018631850266190_2655371510187686779_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_81Y_xrwgu8Q7kNvgH26IG3&_nc_oc=AdjevScIoJe2PFivmMP3Bv_pIUmP_yPXA3Hbn0dnn2u2xCxNnhkcUzaxD_JcxNePlt8&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AV-nJBOl63ZHAc5iEwStqDU&oh=00_AYDA6ZDngKRo5lQMRB6TqMX5wypv8VHckYnQ8hIHF4l0UQ&oe=67848A4C" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/454510112_1018631840266191_5333025997230911098_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=E835ojQZC6EQ7kNvgEVN17_&_nc_oc=AdhYBErDdYQ_iFfYeEpZ8BLklJlB1ZbU3QMLOgZ-kPaERPK3jXLvAtR1Kxai1Ypnitk&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=A7oEeNgFxkhysuya_wH6OXZ&oh=00_AYDhjCT-l-NCqYI9XyaM726TywPGhJqvngy3-GUrLSbUHw&oe=6784793C" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448975024_985953386867370_2728000716829521632_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8p0y16BJ8j4Q7kNvgEQbd66&_nc_oc=Adhxd_d-jgzQJ8lPHZFAqAhU6To27XexjfWBZzEoLsTa_ynaTYQ4ucynrQgG6JlNgIo&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AYs6XYdCTiV072IIXKU_sSV&oh=00_AYBKUJeav5eNyX7NcnGRhBUirmbu9yHicgCzG7OmuChSYA&oe=678457C2" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448884035_985953423534033_5614901322828000524_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rQi8BfFYo4MQ7kNvgFHvo5i&_nc_oc=Adizuv4XVs1hHuG2uwGwcncgjicoVbwPsXAL1VdAamvxDDVBVd6Y3wQC4_wRSuO662M&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AvQLceKuwq40b_OI6gJpi3H&oh=00_AYDrx2hl72uGFi9WzQ6DnG8DVyFdjB7qQkNdxXKDMJPfjA&oe=67846651" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448975200_985953420200700_4909793838686362686_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GysVRI4Oy1gQ7kNvgH0HP2V&_nc_oc=AdiJeGRDnXNyvNyQv92FxsU79y8Oj46GT7gihhxqiTNY8xIVmWwpBe_uXs9JVck9Mg4&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=A6v_06UcE4cvwglama55ZaD&oh=00_AYD6yktdS-AnOrCsFYjzhlzy7KA9a06TfKdTFZoUxB0WFw&oe=67845C00" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448201803_978961074233268_1323201597564882336_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5ycu8uAdQZEQ7kNvgGHOPET&_nc_oc=AdjQY8kMt3p1H43e_IlHAEFiomyIKd-4kMfqupBJfcmOF8OAJfkNXEn9H5DK4d_beMM&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=A1X0cZslgoNWC80Il1OkIFn&oh=00_AYCrSy8wfOCrV23pL6Do0oGVunHkwEQm5tRB3PqONWF8sA&oe=67846467" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448206560_978961064233269_2424706543037441634_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wKanyhGROCMQ7kNvgHqaYte&_nc_oc=AdiGjs3kUBcOTgEWZblA0d5hYr9IT2ZVyx0OQjutOt1QyAKjLhj_iMz3j5gKvftdEp4&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AleLnQQTGsPdMjY5FfPps2k&oh=00_AYABYkAxEOKtT4-2bXiNwWnQRN-XyBW-pp77PWHANeb3WA&oe=678459E5" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448267472_978961040899938_6459171781987732458_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KYZbQmoQCwcQ7kNvgH03Tnk&_nc_oc=AdgkTDnbSmrVJTDMRbsk8CSpBUZMwzkRln5SNRKeeJIq3GssvDDlK9fJPRCuLXfOeUI&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AJ022uD6UJKEGDQQjGrJr8c&oh=00_AYD0fG12wTCySiZ0b7KuJoCxpRaOkU_jakUev7izP7yE7w&oe=67846732" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448228696_978961030899939_3700905045473842598_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dSDmwtDVx30Q7kNvgGL6JLL&_nc_oc=AdicnXf8LuqA1xp3pgMMRFLnQSVTD24kKyDcUGF0yGGdrSib7ReqxoM1bntkc8yRbAk&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AeoTxix-JuALjUCliYmnyDS&oh=00_AYDjKu2OqSHbJdBnUYD57uPdjyhtbniwnEH5dlCeMXmZtw&oe=67846692" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448184476_978961014233274_7643898801016303320_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LSBc_xdqqcwQ7kNvgFE7Ozk&_nc_oc=AdjLVMrXQ_9X-jzLVUU1kKNpFBlkcWWj1L1aP8VFYerAMF2wEMwbqUSKpHrXtOHtXV0&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AKGpJXwc9217RLPfnf0jt0M&oh=00_AYB8EdxLU1Z13sqrAaycO0lbgvqQywhosF69gEFV2FPHnA&oe=678484BA" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448265883_978961000899942_4596547070124227928_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NQgzUz9fTdUQ7kNvgGEgcFZ&_nc_oc=AdgBJ748IMZkc82Y6ijl4w0P3osjO_KGmJx5o3IXQjWDRQGuTLnUvI8nATcJuK6NUF4&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AS0jkuYQezUMMwxL26-AEIe&oh=00_AYCGHVXMICk-ASz5hWp7-9W8pL3vFy7wxOp-hmCZfSJQCg&oe=67848602" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448271135_978960970899945_1204776499354923992_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SQkXesaoBQYQ7kNvgE-4Hy5&_nc_oc=AdiwNzDiToqjWQebiW2ME57SEguxpsP4qWq8XR33cTUii-9SyAPbJzWSr7r5bap2FDQ&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=ATtw3ujKz0lRSk9LOtY-DcM&oh=00_AYBJwaKHVRTRJv5FAwMoAhL4BsmN8FKC3aHoLq4XlZ3_AQ&oe=6784591F" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448201631_978960930899949_6473721098467921040_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SNfivXzItpAQ7kNvgG5m7pT&_nc_oc=AdjODqZLhvK9XSIcY0u7Cle0Db_zv3dtZr7z9h8d5RND9WczjzW-2EqlacFj9izKrJg&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AqZ4pn_XsOqDaemlgRM2da7&oh=00_AYAnM_flqpDb0GZ4fbpxl7CoJmEQ5mSlN5u5dx3eDyc8ZA&oe=67846ABD" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448209722_978960917566617_529564964195894165_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=3DHQbk7uEy0Q7kNvgETzxIE&_nc_oc=AdiTO0CjZWE9-3aZWjhPjYr507V26JPUgORpug2MMnifBo_CImTQozXi-8mK96OrHic&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=ApdRDeEymfADBN3qs4yvFDj&oh=00_AYAz69gOS5m16LdrKDGXD4-Q0e9yvk9XhO59NO-vzw9GqA&oe=67847301" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448186047_978960890899953_2981761575307517663_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=aDB18FalTeAQ7kNvgEbTuiS&_nc_oc=AdgZI8ILB9u8JFY8tKVqOg2q3BvcoBV6IFwHkbICtXUp_XR1JRisOrBAgq0gZyyshjQ&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=A60jMCKeBXswriXKDbhaG-H&oh=00_AYBlm08XXdYYRAWZu1HTzr4bMXU32SWqGG5vMlZdN5902A&oe=678458D1" alt="Bathroom Product 2">
+        </div>
+        <div class="product animate__animated animate__fadeInUp">
+          <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-6/448185058_978960870899955_1364110449207419007_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gL4mSUoaaKQQ7kNvgF34HpK&_nc_oc=AdhQwAYXNF4KbzHfv4d7CC6xwoxR1dT5uEwe8-hHXzaSzO1zeDKwzg7C9kjHc595tQ4&_nc_zt=23&_nc_ht=scontent.fprn4-1.fna&_nc_gid=AipYVsHyQ15rCiQTTiWwWu-&oh=00_AYBT_FS5zOYtgjfHr_mm-K2LsyO6pLIZfqirdu2IWdRXIA&oe=67848C4B" alt="Bathroom Product 2">
+        </div>
+       
+
+            
+        
+          
+          
+      </div>
+     
+    </div>
+   
+  </section>
+  <script>
+    
+  </script>
+
+  <footer>
+    <p>&copy; 2024 Intercom . All rights reserved.</p>
+  </footer>
+</body>
+</html>

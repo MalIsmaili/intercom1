@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers - Qeramika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            background-color: #f2f2f2;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #2e3a45;
+            color: #fff;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4f5d75;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4f5d75;
+            min-width: 150px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 20;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            display: block;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #2e3a45;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .rotating-bar {
+            background-color: white;
+            color: black;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            padding: 0.5rem 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .rotating-bar span {
+            display: inline-block;
+            animation: scrollText 40s linear infinite;
+        }
+
+        @keyframes scrollText {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .offers-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            padding: 3rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .product-card p {
+            margin: 0;
+            color: #4f5d75;
+        }
+
+        footer {
+            background-color: #2e3a45;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer a {
+            color: #4f5d75;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        .body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="body">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Rreth nesh</a>
+            <div class="dropdown">
+            <a href="products.html">Produkte</a>
+                <div class="dropdown-content">
+                    <a href="tiles.html">Pllaka</a>
+                    <a href="bathroom.html">Banjo</a>
+                    
+                </div>
+            </div>
+            <a href="offers.html">Oferta</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <div class="rotating-bar">
+        <span>Na Fal Por Nuk ka offerta per momentin!! Na Fal Por Nuk ka offerta per momentin!!</span>
+    </div>
+
+    <section class="offers-container">
+        <div class="product-card">
+            <h3>404</h3>
+            <p>Na Fal Por Nuk ka offerta per momentin!!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Intercom. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
